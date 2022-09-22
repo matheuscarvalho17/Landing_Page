@@ -34,8 +34,10 @@ export default function Home() {
         </Infos>
         <Logo>
           <Img
-            src="../images/avatar.png"
-            //alt="My avatar"
+            width={'230px'}
+            height={'230px'}
+            alt={'My avatar'}
+            src={'/images/avatar.png'}
           />
         </Logo>
       </Content>
