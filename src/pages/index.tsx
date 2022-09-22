@@ -17,7 +17,7 @@ export default function Home() {
     <Container>
       <Content>
         <Infos>
-          <Name>{'Olá, sou Matheus Carvalho'}</Name>
+          <Name>{`Hi, I'm Matheus Carvalho`}</Name>
           <Especialization>{'FrontEnd & Mobile Developer'}</Especialization>
           <Intro>
             {`Graduated in Computer Engineering at the Presidente Antônio Carlos University,
