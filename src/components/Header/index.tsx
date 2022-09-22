@@ -14,7 +14,7 @@ import {
   ContentTitle,
 } from './styles';
 
-export default function Header() {
+export function Header() {
   const { asPath } = useRouter();
   const [sidebar, setSidebar] = useState<boolean>(true);
 
