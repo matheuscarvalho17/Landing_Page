@@ -12,7 +12,7 @@ import {
   Container,
   CloseSidebar,
   ContentTitle,
-} from './styles';
+} from './style';
 
 export function Header() {
   const { asPath } = useRouter();
