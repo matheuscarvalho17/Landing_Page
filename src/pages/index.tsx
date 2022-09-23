@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import {
-  Img,
   Name,
   Logo,
   Intro,
@@ -33,12 +32,7 @@ export default function Home() {
           </Link>
         </Infos>
         <Logo>
-          <Img
-            width={'230px'}
-            height={'230px'}
-            alt={'My avatar'}
-            src={'/images/avatar.png'}
-          />
+          <img src="/images/avatar.png" alt={'My avatar'}></img>
         </Logo>
       </Content>
     </Container>
