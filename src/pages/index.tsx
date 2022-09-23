@@ -10,7 +10,7 @@ import {
   Container,
   LinkProjects,
   Especialization,
-} from './styles';
+} from './style';
 
 export default function Home() {
   return (

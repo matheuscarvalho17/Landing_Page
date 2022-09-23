@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconType } from 'react-icons/lib';
-import { Item, Icon, Text, Button } from './styles';
+import { Item, Icon, Text, Button } from './style';
 
 interface IItemContactProps {
   id: string;
