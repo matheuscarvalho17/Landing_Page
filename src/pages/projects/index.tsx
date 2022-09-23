@@ -7,7 +7,7 @@ import {
   Container,
   Created_at,
   TitleProject,
-} from './style';
+} from '../../styles/projects.style';
 
 interface IProjectProps {
   id: number;
