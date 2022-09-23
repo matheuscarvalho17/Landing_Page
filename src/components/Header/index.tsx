@@ -10,13 +10,12 @@ import {
   NavLinks,
   SubTitle,
   Container,
-  CloseSidebar,
   ContentTitle,
 } from './style';
 
 export function Header() {
   const { asPath } = useRouter();
-  const [sidebar, setSidebar] = useState<boolean>(true);
+  const [sidebar, setSidebar] = useState<boolean>(false);
 
   function showSiderbar() {
     setSidebar(!sidebar);
@@ -33,7 +32,11 @@ export function Header() {
           <SubTitle>{'Personal Landing Page'}</SubTitle>
         </ContentTitle>
         <Menu>
-          <FaBars onClick={showSiderbar} />
+          {sidebar ? (
+            <FaTimes onClick={showSiderbar} />
+          ) : (
+            <FaBars onClick={showSiderbar} />
+          )}
         </Menu>
         <NavLinks sidebar={sidebar}>
           <Link href="/">
@@ -51,9 +54,6 @@ export function Header() {
               {'Contact'}
             </Anchor>
           </Link>
-          <CloseSidebar onClick={showSiderbar}>
-            <FaTimes />
-          </CloseSidebar>
         </NavLinks>
       </Content>
     </Container>
